@@ -9,6 +9,7 @@
 		display: flex;
 		justify-content: space-evenly;
 		align-items: center;
+		width: 90%;
 		.history-icon {
 			cursor: pointer;
 			opacity: 0.5;
@@ -17,6 +18,12 @@
 			&:hover {
 				opacity: 0.8;
 			}
+		}
+		.url-title {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 80%;
 		}
 		h4 {
 			color: rgb(100, 100, 100);
@@ -32,17 +39,51 @@
 	}
 
 	.delete-btn {
-		background-color: inherit;
+		background-color: none;
 		border: none;
 		outline: none;
+		margin: 0 20px;
 
 		.delete-btn-icon {
 			cursor: pointer;
 			opacity: 0.5;
-			margin: 0 20px;
+
 			font-size: 1.2em;
 			&:hover {
 				opacity: 0.8;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.history-body {
+		.history-left {
+			.history-icon {
+				margin: 0 5px;
+			}
+
+			.url-title {
+				flex-direction: column;
+				align-items: flex-start;
+
+				h4 {
+					font-size: 0.8em;
+					margin: 0 5px;
+				}
+				p {
+					color: gray;
+					font-size: 0.7em;
+					font-weight: 400;
+					margin: 0 5px;
+				}
+			}
+
+			.delete-btn {
+				background-color: none;
+				border: none;
+				outline: none;
+				margin: 0 10px;
 			}
 		}
 	}

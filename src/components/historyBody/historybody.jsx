@@ -15,8 +15,11 @@ function HistoryBody({title , url , id}) {
 
         <div className='history-left'>
         <HistoryIcon className='history-icon'/>
+        <div className='url-title'>
         <h4>{title}</h4>
         <p>{url}</p>
+        </div>
+
         
         </div>
          <button className='delete-btn' onClick={deleteHistory}>  

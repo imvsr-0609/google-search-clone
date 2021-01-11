@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router , Switch , Route} from 'react-router-dom'
+import {HashRouter as Router , Switch , Route} from 'react-router-dom'
 import HistoryContextProvider from './context/historyContext'
 import SearchContextProvider from './context/searchcontext'
 import HistoryPage from './pages/HistoryPage/historypage'
