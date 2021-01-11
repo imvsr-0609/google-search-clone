@@ -1,0 +1,44 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 900px;
+	margin-left: 160px;
+	margin: 30px;
+
+	.numbers {
+		display: flex;
+		justify-content: space-evenly;
+
+		:link {
+			margin: 6px;
+			text-decoration: none;
+		}
+
+		a {
+			color: blue;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.google {
+		font-size: 2.2em;
+		font-weight: 600;
+		letter-spacing: -1px;
+
+		.blue {
+			color: #4285f4;
+		}
+		.green {
+			color: rgb(0, 187, 0);
+		}
+		.yellow {
+			color: #fbbc05;
+		}
+		.red {
+			color: #ea4335;
+		}
+	}
+}

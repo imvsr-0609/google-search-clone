@@ -1,0 +1,24 @@
+.image-footer {
+	margin: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	h4 {
+		font-weight: 400;
+		color: gray;
+		padding: 10px;
+	}
+	span {
+		color: blue;
+	}
+}
+.image-body {
+	margin: 10px;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+}

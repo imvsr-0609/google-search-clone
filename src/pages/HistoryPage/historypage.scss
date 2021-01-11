@@ -1,0 +1,21 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.history-page {
+	width: 100vw;
+	min-height: 500px;
+	max-width: 990px;
+	margin: 50px auto;
+	padding: 20px;
+
+	h1 {
+		background-color: rgb(220, 220, 220);
+		padding: 15px;
+		color: rgba(0, 0, 0, 0.9);
+		font-weight: 500;
+		font-size: 1.2em;
+	}
+}

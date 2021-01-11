@@ -1,0 +1,49 @@
+.history-body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background-color: rgba(240, 240, 240, 0.4);
+
+	.history-left {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		.history-icon {
+			cursor: pointer;
+			opacity: 0.5;
+			margin: 0 20px;
+			font-size: 1.2em;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+		h4 {
+			color: rgb(100, 100, 100);
+			font-size: 0.9em;
+			font-weight: 500;
+			margin: 0 30px;
+		}
+		p {
+			color: gray;
+			font-size: 0.85em;
+			font-weight: 400;
+		}
+	}
+
+	.delete-btn {
+		background-color: inherit;
+		border: none;
+		outline: none;
+
+		.delete-btn-icon {
+			cursor: pointer;
+			opacity: 0.5;
+			margin: 0 20px;
+			font-size: 1.2em;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}

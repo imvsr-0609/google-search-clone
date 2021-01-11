@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {BrowserRouter as Router , Switch , Route} from 'react-router-dom'
+import HistoryContextProvider from './context/historyContext'
+import SearchContextProvider from './context/searchcontext'
+import HistoryPage from './pages/HistoryPage/historypage'
+import HomePage from './pages/homepage/homepage'
+import ImagePage from './pages/ImagePage/imagepage'
+import SearchPage from './pages/searchpage/searchpage'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+            <HistoryContextProvider>
+              <SearchContextProvider>
+                <Router>
+                  <Switch>
+                    <Route exact path='/search/images'>
+                      <ImagePage/>
+                    </Route>
+                    <Route exact path='/search'>
+                      <SearchPage/>
+                    </Route>
+                    <Route exact path='/'>
+                      <HomePage/>
+                    </Route>
+                    <Route path='/search/history'>
+                      <HistoryPage/>
+                    </Route>
+                    </Switch>
+                  </Router>
+                </SearchContextProvider>
+              </HistoryContextProvider>
+            
+      
+      </div>
   );
 }
 

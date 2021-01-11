@@ -1,0 +1,70 @@
+$search-color: rgb(220, 220, 220);
+$search-icons-color: rgb(151, 151, 151);
+$button-color: #f0f0f0;
+
+.search {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	.search-input {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid $search-color;
+		padding: 10px;
+		width: 60vw;
+		max-width: 600px;
+		border-radius: 999px;
+
+		&:hover {
+			box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.3);
+		}
+
+		form {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			input {
+				width: 90%;
+				border: none;
+				outline: none;
+				padding: 5px;
+			}
+			.search-icons {
+				color: $search-icons-color;
+				margin: 0 5px;
+
+				&.mic {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.buttons {
+		margin: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&.hidden {
+			display: none !important;
+		}
+
+		Button {
+			margin: 0 5px;
+			text-transform: none;
+			border: 1px solid white;
+			padding: 7px;
+			background-color: $button-color;
+
+			&:hover {
+				border: 1px solid $search-color;
+			}
+		}
+	}
+}

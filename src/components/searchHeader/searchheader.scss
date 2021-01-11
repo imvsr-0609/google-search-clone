@@ -1,0 +1,91 @@
+.search-header {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	margin: 20px 0;
+	border-bottom: 1px solid lightgray;
+
+	.search-header-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.search-header-top-left {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			:link .google-logo {
+				height: 100%;
+				width: 90px;
+				margin: 0 20px;
+				margin-right: 50px;
+			}
+		}
+
+		.search-header-top-right {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 20px;
+
+			.MuiSvgIcon-root {
+				margin: 0 7px;
+				opacity: 0.6;
+				cursor: pointer;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+			.avatar {
+				width: 32px;
+				height: 32px;
+				margin: 0 7px;
+			}
+		}
+	}
+
+	.search-header-bottom {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-left: 160px;
+
+		a {
+			color: gray;
+		}
+
+		:link {
+			display: flex;
+			position: relative;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			font-size: 0.85em;
+			padding: 20px 10px;
+
+			&.more {
+				margin-right: 20px;
+			}
+
+			.MuiSvgIcon-root {
+				font-size: 1.5em;
+				padding: 0 2px;
+			}
+
+			&::after {
+				position: absolute;
+				bottom: 0%;
+				content: '';
+				width: 100%;
+				height: 3px;
+				background-color: rgb(58, 148, 250);
+				transform: scale(0);
+			}
+			&:focus::after {
+				transform: scale(1);
+			}
+		}
+	}
+}

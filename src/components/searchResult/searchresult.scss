@@ -1,0 +1,27 @@
+.search-result {
+	max-width: 650px;
+	min-width: 400px;
+	margin-right: 10%;
+	margin: 20px 0;
+
+	.display-link {
+		font-weight: 400;
+		margin-bottom: 3.5px;
+	}
+
+	.url {
+		font-size: 1.4em;
+		color: rgb(0, 0, 220);
+		text-decoration: none;
+		margin: 5px 0;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.snippet {
+		color: gray;
+		margin: 5px 0;
+	}
+}
