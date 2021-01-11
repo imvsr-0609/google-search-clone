@@ -12,7 +12,7 @@ function App() {
       <div className="App">
             <HistoryContextProvider>
               <SearchContextProvider>
-                <Router>
+                <Router basename={process.env.PUBLIC_URL}>
                   <Switch>
                     <Route exact path='/search/images'>
                       <ImagePage/>
@@ -23,7 +23,7 @@ function App() {
                     <Route exact path='/'>
                       <HomePage/>
                     </Route>
-                    <Route path='/search/history'>
+                    <Route exact path='/search/history'>
                       <HistoryPage/>
                     </Route>
                     </Switch>
