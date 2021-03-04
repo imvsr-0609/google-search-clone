@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/google-search-clone/static/css/main.fac411f2.chunk.css",
-    "main.js": "/google-search-clone/static/js/main.f9a0b489.chunk.js",
-    "main.js.map": "/google-search-clone/static/js/main.f9a0b489.chunk.js.map",
+    "main.css": "/google-search-clone/static/css/main.3e6674aa.chunk.css",
+    "main.js": "/google-search-clone/static/js/main.34b22d36.chunk.js",
+    "main.js.map": "/google-search-clone/static/js/main.34b22d36.chunk.js.map",
     "runtime-main.js": "/google-search-clone/static/js/runtime-main.41b35952.js",
     "runtime-main.js.map": "/google-search-clone/static/js/runtime-main.41b35952.js.map",
     "static/js/2.a5c8c95e.chunk.js": "/google-search-clone/static/js/2.a5c8c95e.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.eb4f367c.chunk.js": "/google-search-clone/static/js/3.eb4f367c.chunk.js",
     "static/js/3.eb4f367c.chunk.js.map": "/google-search-clone/static/js/3.eb4f367c.chunk.js.map",
     "index.html": "/google-search-clone/index.html",
-    "static/css/main.fac411f2.chunk.css.map": "/google-search-clone/static/css/main.fac411f2.chunk.css.map",
+    "static/css/main.3e6674aa.chunk.css.map": "/google-search-clone/static/css/main.3e6674aa.chunk.css.map",
     "static/js/2.a5c8c95e.chunk.js.LICENSE.txt": "/google-search-clone/static/js/2.a5c8c95e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.41b35952.js",
     "static/js/2.a5c8c95e.chunk.js",
-    "static/css/main.fac411f2.chunk.css",
-    "static/js/main.f9a0b489.chunk.js"
+    "static/css/main.3e6674aa.chunk.css",
+    "static/js/main.34b22d36.chunk.js"
   ]
 }
